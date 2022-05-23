@@ -1,0 +1,249 @@
+* {
+  padding: 0;
+  margin: 0;
+  font-family: sans-serif;
+}
+
+header {
+  width: 100%;
+  height: 7vh;
+  margin: auto;
+  background-color: blue;
+  color: white;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+header li {
+  list-style: none;
+  display: inline;
+  margin-right: 15px;
+}
+
+header li a {
+  text-decoration: none;
+  color: white;
+}
+
+#hamburgerMenu {
+  display: none;
+}
+
+.flex-column {
+  min-width: 320px;
+}
+
+.firstBlockContent {
+  margin: auto;
+  display: flex;
+  max-width: 935px;
+  width: 100%;
+  margin-top: 35px;
+}
+
+.firstParagraph,
+.secondParagraph {
+  margin: auto;
+}
+
+.text1p h1 {
+  font-size: 4rem;
+}
+
+.text1p p {
+  font-size: 2.5rem;
+}
+
+.text-anchor1p,
+.secondParagraph p {
+  margin-top: 35px;
+}
+
+.firstBlockContent a {
+  display: block;
+  width: 100px;
+  height: 25px;
+  text-align: center;
+  line-height: 25px;
+  text-decoration: none;
+  color: white;
+  background-color: blue;
+  border-radius: 15px;
+}
+
+.secondBlockContent {
+  display: flex;
+  margin: auto;
+  max-width: 935px;
+  width: 100%;
+  margin-top: 35px;
+}
+
+.secondParagraph {
+  width: 100%;
+  margin: auto;
+}
+
+.thirdBlockContent {
+  background-color: blue;
+  margin-top: 35px;
+  padding-bottom: 35px;
+  display: flex;
+  flex-direction: column;
+}
+
+.thirdBlockContentIntern {
+  color: white;
+  text-decoration: none;
+}
+
+.thirdBlockContent p {
+  margin: 10px 0 10px 0;
+}
+
+.thirdBlockContentIntern a {
+  color: white;
+  text-decoration: none;
+}
+
+.thirdBlockContentTitle {
+  max-width: 935px;
+  margin: auto;
+  margin-top: 25px;
+}
+
+.services {
+  max-width: 935px;
+  margin-bottom: 50px;
+  margin-top: 25px;
+  margin: auto;
+  text-align: center;
+}
+
+.firstService {
+  margin-bottom: 25px;
+  margin-top: 25px;
+}
+
+.fourthBlockContent {
+  display: flex;
+  margin: auto;
+  max-width: 935px;
+  width: 100%;
+  margin-top: 35px;
+  justify-content: space-evenly;
+  padding-bottom: 35px;
+}
+
+.fourthBlockContent ul {
+  list-style: none;
+  margin-top: 25px;
+  margin-bottom: 25px;
+}
+
+.fourthBlockContent li {
+  list-style: none;
+  margin: 25px;
+}
+
+.fourthBlockContent a {
+  margin: auto;
+  margin-bottom: 5px;
+  display: block;
+  width: 100px;
+  height: 25px;
+  text-align: center;
+  line-height: 25px;
+  text-decoration: none;
+  color: white;
+  background-color: blue;
+  border-radius: 15px;
+}
+
+.listsColumns {
+  display: flex;
+  margin-left: 15px;
+  align-items: flex-end;
+  text-align: center;
+}
+
+.list-border {
+  border: 2px solid black;
+  margin: 5px 15px 5px 15px;
+}
+
+footer {
+  background-color: blue;
+  color: white;
+  width: 100%;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  height: 5vh;
+  align-items: center;
+}
+
+/* -----Mobile */
+
+@media (max-width: 992px) {
+  header {
+    justify-content: space-between;
+  }
+
+  .firstParagraph {
+    max-width: 100%;
+    max-height: 100%;
+    margin: auto;
+  }
+
+  .firstBlockContent {
+    width: 100%;
+    margin-top: 35px;
+    flex-direction: column;
+  }
+
+  .secondBlockContent {
+    flex-direction: column-reverse;
+    margin: auto;
+  }
+
+  .secondImg {
+    margin: auto;
+  }
+
+  .secondParagraph {
+    max-width: 70%;
+    text-align: center;
+  }
+
+  .thirdBlockContentTitle,
+  .fourthBlockContentTitle {
+    margin-left: 35px;
+  }
+
+  .services {
+    flex-direction: column;
+  }
+
+  .listsColumns {
+    flex-direction: column;
+    margin-top: 25px;
+    align-items: center;
+  }
+
+  .firstList,
+  .secondList,
+  .thirdList {
+    width: 100%;
+  }
+
+  img {
+    max-width: 100%;
+  }
+}
+
+@media (max-width: 520px) {
+  header .menuOptions{
+    margin-left: 30px;
+  }
+}
